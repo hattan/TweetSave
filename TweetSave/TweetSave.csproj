@@ -205,6 +205,9 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Js\app.js" />
+    <Content Include="Js\controllers.js" />
+    <Content Include="Js\filters.js" />
+    <Content Include="Js\services.js" />
     <Content Include="partials\index.html" />
     <Content Include="partials\savedTweets.html" />
     <Content Include="Scripts\angular-cookies.js" />
