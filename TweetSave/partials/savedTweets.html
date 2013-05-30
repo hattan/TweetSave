@@ -1,0 +1,17 @@
+﻿<div class="alert alert-success" ng-show="message">{{message}}</div>   
+<section ng-show="savedTweets.length > 0">
+    <h4>Tweets</h4>
+    <div class="tweet row" ng-repeat="tweet in savedTweets">
+        <img ng-src="{{item.profile_image_url}}" class="span1">
+                
+        <div class="tweetDetails span8">
+            <span class="name">{{tweet.from_user_name}}</span>  
+            <span class="username">@{{tweet.from_user}}</span>
+            <div ng-bind-html-unsafe="tweet.text | linky | TwitterLink"></div>
+        </div>
+        
+        <div class="span2">
+            <button class="btn btn-danger" ng-click="deleteTweet(tweet)">Delete</button>
+        </div>
+    </div>
+</section>

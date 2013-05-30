@@ -1,0 +1,26 @@
+﻿<form class="form-horizontal">
+        
+    <input type="text" ng-model="searchTerm" placeholder="Search">
+    <button class="btn" ng-click="doSearch(searchTerm)">
+        <i class="icon-search"></i>
+    </button>
+
+</form>
+
+<div class="alert alert-success" ng-show="message">{{message}}</div>   
+<section ng-show="results">
+    <h4>Tweets</h4>
+    <div class="tweet row" ng-repeat="item in results">
+        <img ng-src="{{item.profile_image_url}}" class="span1">
+                
+        <div class="tweetDetails span8">
+            <span class="name">{{item.from_user_name}}</span>  
+            <span class="username">@{{item.from_user}}</span>
+            <div ng-bind-html-unsafe="item.text | linky | TwitterLink"></div>
+        </div>
+        
+        <div class="span2">
+            <button class="btn btn-primary" ng-click="saveTweet(item)">Save</button>
+        </div>
+    </div>
+</section>

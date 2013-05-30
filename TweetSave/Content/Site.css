@@ -1,0 +1,47 @@
+﻿.container {
+    margin-top: 20px;
+}
+
+body{
+     background-color:#F2F2E9;
+}
+
+h4{
+    color:#A69580;
+    padding:10px;
+}
+
+section{
+  background-color:#fff;  
+  border-radius:2px;
+}
+
+.tweet{
+    color:#736766;
+    border-bottom:1px solid #D9D7C5;
+    padding:15px 10px 15px 10px;
+}
+
+.tweet img{
+  border-radius: 10px;
+  font-size:10pt;
+}
+
+.tweet a{
+    text-decoration:none;
+    color:#9D3700;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
