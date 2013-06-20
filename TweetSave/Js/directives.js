@@ -73,6 +73,7 @@ app.directive('top', function () {
                 });
                 
                 function process(collection) {
+                    if (collection === undefined) return;
                     collectionCache = collection;
                     var i, block, childScope;
 
