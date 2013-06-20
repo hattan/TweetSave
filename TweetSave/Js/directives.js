@@ -9,7 +9,7 @@ app.directive('searchForm', function () {
         controller: function ($scope, $http, $rootScope) {
 
             $scope.doSearch = function (term) {
-                var url = 'http://localhost:3581/api/twitter/?q=' + term;
+                var url = '/api/twitter/?q=' + term;
 
                 $http.get(url)
                     .success(function (data) {
