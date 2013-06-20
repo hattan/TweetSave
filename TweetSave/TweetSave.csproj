@@ -128,10 +128,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TweetController.cs" />
+    <Compile Include="Controllers\TwitterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Tweet.cs" />
+    <Compile Include="Models\TwitterClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TweetSaveDataContext.cs" />
   </ItemGroup>
@@ -142,6 +144,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\slider.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -206,10 +209,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Js\app.js" />
     <Content Include="Js\controllers.js" />
+    <Content Include="Js\directives.js" />
     <Content Include="Js\filters.js" />
     <Content Include="Js\services.js" />
     <Content Include="partials\index.html" />
+    <Content Include="partials\reverse_template.html" />
     <Content Include="partials\savedTweets.html" />
+    <Content Include="partials\slider.html" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-loader.js" />
@@ -224,6 +230,7 @@
     <Content Include="Scripts\angular-scenario.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\bootstrap-slider.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />

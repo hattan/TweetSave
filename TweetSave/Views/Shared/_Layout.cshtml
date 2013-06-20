@@ -4,17 +4,21 @@
         <title>@ViewBag.Title</title>
         <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
         <link href="~/Content/Site.css" rel="stylesheet" />
+        <link href="~/Content/slider.css" rel="stylesheet" />
     </head>
 <body>
     @RenderBody()
-
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap-slider.js"></script>
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/angular-resource.js"></script>
     <script src="~/Scripts/angular-sanitize.js"></script>
     <script src="~/Js/controllers.js"></script>
     <script src="~/Js/filters.js"></script>
     <script src="~/Js/services.js"></script>
+    
     <script src="~/Js/app.js"></script>
+    <script src="~/Js/directives.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

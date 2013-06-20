@@ -2,7 +2,7 @@
 <section ng-show="savedTweets.length > 0">
     <h4>Tweets</h4>
     <div class="tweet row" ng-repeat="tweet in savedTweets">
-        <img ng-src="{{item.profile_image_url}}" class="span1">
+        <img ng-src="{{tweet.profile_image_url}}" class="span1">
                 
         <div class="tweetDetails span8">
             <span class="name">{{tweet.from_user_name}}</span>  

@@ -1,16 +1,13 @@
 ﻿function TweetCtrl($scope, $http, TweetSave) {
-    $scope.doSearch = function (term) {
-        var url = 'http://search.twitter.com/search.json?callback=JSON_CALLBACK&q=' + term;
+    
 
-        $http.jsonp(url)
-             .success(function (data) {
-                 $scope.results = data.results;
-             });
-    };
 
     $scope.saveTweet = function (tweet) {
         var savedTweet = new TweetSave();
-        angular.copy(tweet, savedTweet);
+        savedTweet.from_user_name = tweet.user.screen_name;
+        savedTweet.text = tweet.text;
+        savedTweet.from_user = tweet.user.name;
+        savedTweet.profile_image_url = tweet.user.profile_image_url;
         savedTweet.$save(function () {
             $scope.message = "Tweet Saved!";
         });
